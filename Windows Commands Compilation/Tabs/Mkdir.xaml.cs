@@ -26,7 +26,7 @@ namespace Windows_Commands_Compilation.Tabs
             InitializeComponent();
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)  
         {
 
         }
@@ -37,7 +37,7 @@ namespace Windows_Commands_Compilation.Tabs
             dialog.IsFolderPicker = true;
             if (dialog.ShowDialog() == CommonFileDialogResult.Ok )
             {
-
+                SourceFolderText.Text = dialog.FileName;
             }
         }
     }

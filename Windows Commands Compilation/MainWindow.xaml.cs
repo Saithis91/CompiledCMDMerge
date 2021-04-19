@@ -24,5 +24,10 @@ namespace Windows_Commands_Compilation
         {
             InitializeComponent();
         }
+
+        private void Window_Initialized(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

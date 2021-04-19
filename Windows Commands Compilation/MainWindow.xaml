@@ -4,15 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Windows_Commands_Compilation"
+        xmlns:uc="clr-namespace:Windows_Commands_Compilation.Tabs"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Initialized="Window_Initialized">
     <DockPanel HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" >
         <TabControl x:Name="TabControl" Height="Auto" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
             <TabItem Header="TabItem">
-                <DockPanel>
-                <Grid Background="#FFE5E5E5"/>
-                    
-                </DockPanel>
+                <uc:Mkdir></uc:Mkdir>
             </TabItem>
             <TabItem Header="TabItem">
                 <Grid Background="#FFE5E5E5"/>

@@ -14,13 +14,24 @@
             <ComboBoxItem Tag="H"  Content="Hard Symbolic Link. H" HorizontalAlignment="Left" Width="798"/>
         </ComboBox>
         <Label Content="Source Folder"></Label>
-        <StackPanel Orientation="Horizontal">
-            <TextBox x:Name="SourceFolderText" Width="512"></TextBox>
-            <Button Content="  ...  " Margin="5,0" Click="Button_Click"></Button>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="SourceParentFolderText" Width="512"></TextBox>
+                <Label Content="/"></Label>
+                <TextBox x:Name="SourceFolderText" Width="128"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Button Content="  ...  " Margin="5,0" Click="Button_Click"></Button>
+                <Label Content="/"></Label>
+                <Button Content="  ...  " Margin="5,0" Click="Button_Click"></Button>
+            </StackPanel>
         </StackPanel>
         <Label Content="Destination Folder"></Label>
         <StackPanel Orientation="Horizontal">
-            <TextBox x:Name="DestFolderText" Width="512"></TextBox>
+            <TextBox x:Name="DestParentFolderText" Width="512"></TextBox>
+            <Label Content="/"></Label>
+            <TextBox x:Name="DestFolderText" Width="128"></TextBox>
             <Button Content="  ...  " Margin="5,0"></Button>
         </StackPanel>   
     </StackPanel>
